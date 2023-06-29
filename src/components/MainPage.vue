@@ -29,7 +29,6 @@ import { useRobonomics } from "@/hooks/useRobonomics";
 import { useSend } from "@/hooks/useSend";
 import { utils } from "robonomics-interface";
 import { ref } from "vue";
-import { useStore } from "vuex";
 import Status from "./Status.vue";
 import Step1 from "./steps/Step1.vue";
 import Step2 from "./steps/Step2.vue";
@@ -70,7 +69,6 @@ export default {
     const statusStep3 = ref(status.none);
     const statusStep4 = ref(status.none);
     const сolorStep4 = ref(status.red);
-    const store = useStore();
 
     const launch = async () => {
       statusText.value = "Tx launched by 'Start' button";
@@ -130,15 +128,6 @@ export default {
 
         statusStep3.value = status.ok;
         statusStep4.value = status.loading;
-
-        // DEMO
-        await robonomics.accountManager.setSender(config.dog, {
-          type: "sr25519",
-          extension: store.state.robonomicsUIvue.polkadot.extensionObj
-        });
-        const call = robonomics.launch.send(config.lamp, config.green);
-        await tx.send(call, config.subscription);
-        // DEMO
       }
     };
 

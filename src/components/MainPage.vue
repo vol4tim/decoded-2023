@@ -109,25 +109,28 @@ export default {
 
         statusText.value = "Transaction sent";
         await sleep(1500);
-        statusText.value = "MyCobot received request";
-        statusStep1.value = status.ok;
-        statusStep2.value = status.loading;
+        if (statusStep2.value === status.none) {
+          statusText.value = "MyCobot received request";
+          statusStep1.value = status.ok;
+          statusStep2.value = status.loading;
+        }
 
         await sleep(config.timeout.step1);
 
         statusText.value = "Human agent got access";
 
         await sleep(config.timeout.step2);
-
-        statusText.value = "Human agent is manipulating Mini Pupper 2";
-
-        statusStep2.value = status.ok;
-        statusStep3.value = status.loading;
+        if (statusStep3.value === status.none) {
+          statusText.value = "Human agent is manipulating Mini Pupper 2";
+          statusStep2.value = status.ok;
+          statusStep3.value = status.loading;
+        }
 
         await sleep(config.timeout.step3);
-
-        statusStep3.value = status.ok;
-        statusStep4.value = status.loading;
+        if (statusStep4.value === status.none) {
+          statusStep3.value = status.ok;
+          statusStep4.value = status.loading;
+        }
       }
     };
 

@@ -97,12 +97,12 @@ export default {
               statusStep2.value = status.ok;
               statusStep3.value = status.ok;
               statusStep4.value = status.ok;
-              if (parameter === config.green) {
-                statusText.value = "Status lamp got result of track, success";
-                сolorStep4.value = status.green;
-              } else {
+              if (parameter === config.red) {
                 statusText.value = "Status lamp got result of track, failed";
                 сolorStep4.value = status.red;
+              } else {
+                statusText.value = "Status lamp got result of track, success";
+                сolorStep4.value = status.green;
               }
               unsubscribe();
             }

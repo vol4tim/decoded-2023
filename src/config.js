@@ -5,7 +5,7 @@ export default {
   command: "QmNLei78zWmzUdbeRB3CiUfAizWUrbeeZh5K1rhAQKCh52",
   subscription: "4HnTtj2hdExSjddA3xqMBx1o5S27XmUYBhjkGQ9ZkpW6Bz8w",
 
-  red: "QmdBgmy1JTEYdbvNcbKHLWRmHzzp1BCWpdEFLAAtUjVH8Q",
+  red: "Qmdx4qag1yFRKJGNMNU2hneqqfQz28acg698gu3RGixPNy",
   green: "QmVep3wpUvMsYJwvVcwgp8ArzRffbsKLXpzwXsajn43sxK",
 
   timeout: {

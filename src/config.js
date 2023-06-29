@@ -1,7 +1,7 @@
 export default {
   manipulator: "4CvF6jVED256b4iJZkZjLbet4i6rUhgxdN98b8VtGmWytJxQ",
   lamp: "4EEx5LiK6GPQaYVhyePut84uAg3nwsbzUWhsBvgyF5AMBMLR",
-  dog: "4D2VLahBdTo28zJFkBdreMw94bCiBUsEZ1uZPvsZYpAXHwTy",
+  dog: "4EEx5LiK6GPQaYVhyePut84uAg3nwsbzUWhsBvgyF5AMBMLR",
   command: "QmNLei78zWmzUdbeRB3CiUfAizWUrbeeZh5K1rhAQKCh52",
   subscription: "4HnTtj2hdExSjddA3xqMBx1o5S27XmUYBhjkGQ9ZkpW6Bz8w",
 
